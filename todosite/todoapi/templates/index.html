@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todo List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1 style="text-align:center" class="display-1">TodoList App</h1>
+
+<hr/>
+    <h2 style="padding:10px">Tasks to be completed</h2>
+<ul class="list-unstyled"></ul>
+    {% for x in tasks_undone %}
+<li style="padding:10px">{{ x.description }} - {{ x.datetime|date:"D d M Y" }}
+</li>
+{% endfor %}
+<hr />
+<p class="h2" style="padding:10px">Completed tasks</p>
+
+<ul class="list-unstyled"></ul>
+    {% for x in tasks_done %}
+    <li style="padding:10px">{{ x.description }} - {{ x.datetime|date:"D d M Y" }}
+    </li>
+    {% endfor %}
+<hr />
+
+<p><a href="http://localhost:8000/admin/"> <h6 style="padding:5px">Make changes</h6></a></p>
+
+<p>This webpage was created by Bhavya Muni. This ToDo App also has an API.</p>
+</body>
+</html>
