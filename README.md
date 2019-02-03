@@ -1,13 +1,20 @@
 # TODOAppAPI
 ### A ToDO API made using Django's REST Framework and Python
 
+## Features
+#### * A RESTful API to return completed, not completed and all tasks
+#### * Sorting tasks by the priority level assigned to them
+#### * Color coded priority levels in the webpage for easier understanding
+#### * Date when the task was created
+
 ## What I learned?
-#### * Using Django's models
-#### * Using the REST-framework of Django
+#### * Using the REST-framework of Django to create a functioning API for the ToDo App
 #### * Using classes in Python to create Django models
-#### * Filtering and querying databases in Django and Python
-#### * Using loops in HTML5
+#### * Filtering and querying models in Django and Python
+#### * Using loops and ifs in HTML5 with *jijna* syntax
 #### * Updating databases by the use of POST and PATCH requests
+#### * Sorting objects of a model
+#### * Data validation of fields in a model by limiting them to choices
 
 
 
