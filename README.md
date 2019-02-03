@@ -12,9 +12,9 @@
 #### * Using classes in Python to create Django models
 #### * Filtering and querying models in Django and Python
 #### * Using loops and ifs in HTML5 with *jijna* syntax
-#### * Updating databases by the use of POST and PATCH requests
+#### * Updating models by the use of POST and PATCH requests
 #### * Sorting objects of a model
-#### * Data validation of fields in a model by limiting them to choices
+#### * Data validation of fields in a model by limiting them to choices    
 
 
 
