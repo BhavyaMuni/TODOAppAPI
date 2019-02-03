@@ -1,5 +1,5 @@
 # TODOAppAPI
-### A ToDO API made using Django's REST Framework and Python
+### A ToDo App API made using Django's REST Framework and Python
 
 ## Features
 #### * A RESTful API to return completed, not completed and all tasks
