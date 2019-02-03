@@ -21,5 +21,6 @@ class AlltasksViewSet(viewsets.ModelViewSet):
 
 def WebpageView(request):
     objects = Task.objects.filter(is_completed = False)
+    sorted_objects = sorted(objects, key=lambda x: x.priority)
     objects_done = Task.objects.filter(is_completed =True)
-    return render(request, template_name='index.html',context={'tasks_undone': objects, 'tasks_done':objects_done})
+    return render(request, template_name='index.html',context={'tasks_undone': sorted_objects, 'tasks_done':objects_done})
