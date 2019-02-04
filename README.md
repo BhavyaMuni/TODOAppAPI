@@ -11,7 +11,7 @@
 #### * Using the REST-framework of Django to create a functioning API for the ToDo App
 #### * Using classes in Python to create Django models
 #### * Filtering and querying models in Django and Python
-#### * Using loops and ifs in HTML5 with *jijna* syntax
+#### * Using *jijna* syntax in HTML5
 #### * Updating models by the use of POST and PATCH requests
 #### * Sorting objects of a model
 #### * Data validation of fields in a model by limiting them to choices    
