@@ -8,13 +8,12 @@
 #### * Date when the task was created
 
 ## What I learned?
-#### * Using the REST-framework of Django to create a functioning API for the ToDo App
+#### * Using the REST-framework of Django to create an API for the ToDo App
 #### * Using classes in Python to create Django models
 #### * Filtering and querying models in Django and Python
 #### * Using *jijna* syntax in HTML5
-#### * Updating models by the use of POST and PATCH requests
 #### * Sorting objects of a model
-#### * Data validation of fields in a model by limiting them to choices    
+#### * Data validation of fields in a model by limiting them to choices 
 
 
 
