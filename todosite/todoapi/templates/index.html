@@ -38,13 +38,7 @@
 <ul>
     {% for x in tasks_done %}
     <li>{{ x.description }} - {{ x.datetime|date:"D d M Y" }}
-        <p style="display: inline-block;
-        background-color: lightgreen;
-        width:20px;
-        height:20px;
-        text-align:center;
-        font-size: 15px;
-        border:black solid 0.75px;">&#10003</p></li>
+        <p style="display: inline-block; background-color: lightgreen; width:20px; height:20px; text-align:center; font-size: 15px; border:black solid 0.75px;">&#10003</p></li>
     {% endfor %}
 </ul>
 <hr />
