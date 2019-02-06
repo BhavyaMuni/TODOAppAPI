@@ -38,17 +38,13 @@
 <ul>
     {% for x in tasks_done %}
     <li>{{ x.description }} - {{ x.datetime|date:"D d M Y" }}
-        
-        {% if x.priority == '1' %}
-        <div class="priority-color" style="background-color: crimson;"></div></li>
-
-        {% elif x.priority == '2' %}
-        <div class="priority-color" style="background-color: orangered;"></div></li>
-
-        {% eliif x.priority == '3' %}
-        <div class="priority-color" style="background-color: greenyellow;"></div></li>
-        {% endif %}
-
+        <p style="display: inline-block;
+        background-color: lightgreen;
+        width:20px;
+        height:20px;
+        text-align:center;
+        font-size: 15px;
+        border:black solid 0.75px;">&#10003</p></li>
     {% endfor %}
 </ul>
 <hr />
