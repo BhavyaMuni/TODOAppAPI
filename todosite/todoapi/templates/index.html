@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Todo List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
 </head>
+
 <body>
 
     <h1 class="display-1">TodoList App</h1>
 
-<hr/>
+    <hr />
     <h2>Tasks to be completed sorted with priority levels</h2>
-<ul>
-    {% for x in tasks_undone %}
-    <li>{{ x.description }} - {{ x.datetime|date:"D d M Y" }}
-        
-        {% if x.priority == '1' %}
-        <div class="priority-color" style="background-color: crimson;"></div></li>
+    <ul>
+        {% for x in tasks_undone %}
+        <li>{{ x.description }} - {{ x.datetime|date:"D d M Y" }}
+
+            {% if x.priority == '1' %}
+            <div class="priority-color" style="background-color: crimson;"></div>
+        </li>
 
         {% elif x.priority == '2' %}
-        <div class="priority-color" style="background-color: orangered;"></div></li>
+        <div class="priority-color" style="background-color: orangered;"></div>
+        </li>
 
         {% elif x.priority == '3' %}
-        <div class="priority-color" style="background-color: greenyellow;"></div></li>
+        <div class="priority-color" style="background-color: greenyellow;"></div>
+        </li>
         {% endif %}
 
-    {% endfor %}
-</ul>
-<hr />
+        {% endfor %}
+    </ul>
+    <hr />
 
 
-<h2>Completed tasks</h2>
-<ul>
-    {% for x in tasks_done %}
-    <li>{{ x.description }} - {{ x.datetime|date:"D d M Y" }}
-        <p style="display: inline-block; background-color: lightgreen; width:20px; height:20px; text-align:center; font-size: 15px; border:black solid 0.75px;">&#10003</p></li>
-    {% endfor %}
-</ul>
-<hr />
+    <h2>Completed tasks</h2>
+    <ul>
+        {% for x in tasks_done %}
+        <li>{{ x.description }} - {{ x.datetime|date:"D d M Y" }}
+            <p
+                style="display: inline-block; background-color: lightgreen; width:20px; height:20px; text-align:center; font-size: 15px; border:black solid 0.75px;">
+                &#10003</p>
+        </li>
+        {% endfor %}
+    </ul>
+    <hr />
 
-<p><a href="http://localhost:8000/admin/"> <h6>Make changes</h6></a></p>
+    <p><a href="http://localhost:8000/admin/">
+            <h6>Make changes</h6>
+        </a></p>
 
-<p style="padding:10px">This webpage was created by Bhavya Muni. This ToDo App also has an API.</p>
+    <p style="padding:10px">This webpage was created by Bhavya Muni. This ToDo App also has an API.</p>
 </body>
+
 </html>
